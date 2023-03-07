@@ -1,0 +1,59 @@
+Instalar o PIPX para instalar os pacotes globais na máquina. 
+# pip install pipx.
+
+
+Instalar o POETRY. 
+# pipx install poetry
+
+
+Iniciando um projeto com poetry. 
+# poetry new notas-musicais #(project-name)
+
+
+Configurando o git para renomear o Branch default de master para main.
+# git config --global init.defaultBranch <name>
+
+
+Iniciando um repositório do git. 
+# git init .
+
+
+Sincronizando o repositório local com o GITHUB, utilizando uma ferramenta chamada gh
+# sudo apt install gh
+# gh repo create (seguir com as perguntas, step-by-step)
+
+
+Crindo o .gitignore.
+instalar o ignr (para criar arquivos .gitignore de várias stacks).
+# pipx install ignr
+
+Criando o arquivo .gitignore
+# ignr -p python > .gitignore
+
+
+Subindo a estrutura inicial para github.
+# git add .
+# git commit -m "Commit inicial, estrutura do projeto."
+# git push
+
+
+================================== dependências de desenvolvimento
+Criando o grupo de tools de desenvolvimento. 
+- pytest: testes unitários
+- pytest-cov: cobertura de testes (coverage)
+- blue: coding style (formatador code style que segue a PEP8). vertical hanging indent
+- isort: ordena os import em ordem alfabéticas.
+- taskipy: ferramenta de automatização de comandos durante o desenvolvimento. 
+
+# poetry add --group dev pytest pytest-cov blue isort taskipy
+
+
+
+================================== dependências de documentação
+Criando o grupo de tools de documentação.
+- mkdocs-material: framework de documentação
+- mkdocstrings: extensão com que consegue gerar a documentação a partir de comentários docstrings do código.
+- mkdocstrings-python: reconhece as docs strings do Python.
+
+# poetry add --group doc mkdocs-material mkdocstrings mkdocstrings-python
+
