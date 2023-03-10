@@ -57,3 +57,20 @@ Criando o grupo de tools de documentação.
 
 # poetry add --group doc mkdocs-material mkdocstrings mkdocstrings-python
 
+
+
+Video 3 - Configurando as ferramentas de desenvolvimento.
+
+Ativando o ambiente virutal 
+# poetry shell
+
+Configurando o MkDocs
+Criando a estrutura de pastas para documentação
+# mkdocs new . (na pasta do setor.)
+
+
+Testando a documentação inicial em um browser
+# mkdocs serve
+
+Abrir arquivo de Configuração mkdocs.yml
+
