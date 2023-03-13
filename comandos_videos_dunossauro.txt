@@ -1,3 +1,6 @@
+Link da playlist do projeto.
+https://www.youtube.com/playlist?list=PLOQgLBuj2-3LiHhK1upnjpHiFzcJ472QS
+
 Instalar o PIPX para instalar os pacotes globais na máquina. 
 # pip install pipx.
 
@@ -74,3 +77,10 @@ Testando a documentação inicial em um browser
 
 Abrir arquivo de Configuração mkdocs.yml
 
+
+
+
+Links de referencias:
+Vídeo 4:
+Escalas wikipedia: https://en.wikipedia.org/wiki/List_of_musical_scales_and_modes
+Google Docstrings: https://www.sphinx-doc.org/en/master/usage/extensions/example_google.html
