@@ -19,12 +19,12 @@ def escalas(tonica: str, tonalidade: str) -> dict[str, list[str]]:
 
         >>> escalas('A', 'maior')
         {'notas': ['A', 'B', 'C#', 'D', 'E', 'F#', 'G#'], 'graus': ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII']}
-    
+
     Todo:
         * Permitir que o usuário informe a escala em maiúsculo ou não. 'A' ou 'a'.
     """
     intervalos = ESCALAS[tonalidade]
-    tonica_pos = NOTAS.index(tonica) # type: ignore
+    tonica_pos = NOTAS.index(tonica)   # type: ignore
     temp = []
 
     for intervalo in intervalos:
