@@ -84,3 +84,10 @@ Links de referencias:
 Vídeo 4:
 Escalas wikipedia: https://en.wikipedia.org/wiki/List_of_musical_scales_and_modes
 Google Docstrings: https://www.sphinx-doc.org/en/master/usage/extensions/example_google.html
+
+
+# para criar app de linhas de comando (cli)
+poetry add typer 
+
+# para instalar uma biblioteca de prints customizados. 
+poetry add rich
