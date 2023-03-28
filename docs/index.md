@@ -1,16 +1,22 @@
+
 ![Logo do projeto](assets/logo.png){ width=300 .center }
 
 # Notas Musicais
 
+Notas Musicais é um CLI para ajudar na formação de escalas e acordes.
+
+Temos dois comandos disponíveis: `acordes`, `escalas`
 ## Como usar?
 
+### Escalas
+
 Você pode chamar as escalas via linha de comando. Por exemplo:
-```bash
-poetry run escalas
-```
 
 Retornando os graus e as notas correspondentes a essa escala.
-```
+
+```bash
+poetry run notas-musicais escala
+
 ┏━━━┳━━━━┳━━━━━┳━━━━┳━━━┳━━━━┳━━━━━┓
 ┃ I ┃ II ┃ III ┃ IV ┃ V ┃ VI ┃ VII ┃
 ┡━━━╇━━━━╇━━━━━╇━━━━╇━━━╇━━━━╇━━━━━┩
@@ -18,22 +24,63 @@ Retornando os graus e as notas correspondentes a essa escala.
 └───┴────┴─────┴────┴───┴────┴─────┘
 ```
 
-### Alteração na escala
+#### Alteração na escala
 
 O primeiro parâmetro do CLI é a tônica da escala ue deseja exibir. Desta forma, você pode alterar a escala retornada:
+
 ```bash
-poetry run escalas F#
+poetry run notas-musicas escala F#
+
+┏━━━┳━━━━┳━━━━━┳━━━━┳━━━┳━━━━┳━━━━━┓
+┃ I ┃ II ┃ III ┃ IV ┃ V ┃ VI ┃ VII ┃
+┡━━━╇━━━━╇━━━━━╇━━━━╇━━━╇━━━━╇━━━━━┩
+│ F#│ G# │ A#  │ B  │ C#│ D# │ F   │
+└───┴────┴─────┴────┴───┴────┴─────┘
+```
+
+#### Alteração na tonalidade
+
+Você pode alterar a tonalidade retornada da escala também. Esse é o segundo parâmetro do CLI é a tônica da escala ue deseja exibir. Desta forma, :
+
+```bash
+poetry run notas-musicas escala D# menor
+
+┏━━━┳━━━━┳━━━━━┳━━━━┳━━━┳━━━━┳━━━━━┓
+┃ I ┃ II ┃ III ┃ IV ┃ V ┃ VI ┃ VII ┃
+┡━━━╇━━━━╇━━━━━╇━━━━╇━━━╇━━━━╇━━━━━┩
+│ D#│ F  │ F#  │ G# │ A#│ B  │ C#  │
+└───┴────┴─────┴────┴───┴────┴─────┘
 
 ```
 
-### Alteração na tonalidade
+### Acordes
 
-Você pode alterar a tonalidade retornada da escala também. Esse é o segundo parâmetro do CLI é a tônica da escala ue deseja exibir. Desta forma, :
+Uso básico
+
 ```bash
-poetry run escalas F# maior
+poetry run notas-musicais acorde
+┏━━━┳━━━━━┳━━━┓
+┃ I ┃ III ┃ V ┃
+┡━━━╇━━━━━╇━━━┩
+│ C │ E   │ G │
+└───┴─────┴───┘
+```
 
+#### Variações na cifra
+
+```bash
+poetry run notas-musicais acorde c+
+┏━━━┳━━━━━┳━━━━┓
+┃ I ┃ III ┃ V+ ┃
+┡━━━╇━━━━━╇━━━━┩
+│ C │ E   │ G# │
+└───┴─────┴────┘
 ```
 
 ## Mais informações sobre o CLI
 
 Para descobrir outras opções, você pode usar a flag `--help`
+
+```bash
+poetry run notas-musicais --help.
+```
